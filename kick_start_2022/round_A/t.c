@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct node{
+    int  i_value;
+    struct   node * next_node ;
+};
+
 int main(void)
 {
     int i_array[] = {3, 5, 33, 12121};
@@ -10,7 +15,6 @@ int main(void)
 
     do
     {
-
         i_process_i = 0;
         itmp = ptr[i];
         while (itmp > 0) //do till num greater than  0
